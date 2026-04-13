@@ -8,7 +8,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="pt-20 md:pt-24 pb-0 bg-white relative overflow-hidden">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-24 items-start">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           
           {/* Visual Identity Side */}
           <div className="relative">
