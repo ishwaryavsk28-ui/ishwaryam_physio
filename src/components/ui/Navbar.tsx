@@ -69,15 +69,14 @@ export default function Navbar() {
           ))}
           
           <Link
-            href={CLINIC_DATA.contact.whatsappLink}
-            target="_blank"
+            href="#contact"
             className={`px-8 py-3 rounded-button font-ui font-bold text-[11px] uppercase tracking-widest transition-all duration-300 flex items-center gap-2 ${
               scrolled
                 ? "bg-primary text-white hover:bg-accent hover:shadow-lg"
                 : "bg-white text-primary hover:bg-accent hover:text-white"
             }`}
           >
-            Find Cure
+            Book Appointment
             <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
@@ -120,9 +119,8 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href={CLINIC_DATA.contact.whatsappLink}
-                target="_blank"
-                className="w-full bg-primary text-white py-5 rounded-button text-center font-ui font-bold text-sm uppercase tracking-widest"
+                href="#contact"
+                className="w-full bg-primary text-white py-5 rounded-button text-center font-ui font-bold text-sm uppercase tracking-widest hover:bg-accent transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 Book Appointment
