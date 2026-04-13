@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     }
 
     const data = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'onboarding@resend.dev',
+      from: process.env.FROM_EMAIL || 'Ishwaryam Physiotherapy <onboarding@resend.dev>',
       to: process.env.TO_EMAIL || 'ishwaryavsk28@gmail.com',
       subject: `🛎️ New Recovery Request — ${name}`,
       html: `
