@@ -17,7 +17,6 @@ export default function AboutSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10"
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10 group"
               >
                 <img
@@ -25,7 +24,7 @@ export default function AboutSection() {
                   alt="Dr. Ishwarya — Lead Physiotherapist"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[url('/images/hero_excellence_v3.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
               </motion.div>
 
               {/* Signature Block Under Portrait */}
