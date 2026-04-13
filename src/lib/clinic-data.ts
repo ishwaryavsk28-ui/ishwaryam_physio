@@ -24,6 +24,8 @@ export const CLINIC_DATA = {
     whatsappLink: "https://wa.me/919361426487",
     email: "ishwaryamphysio@gmail.com",
     youtube: "https://youtube.com/@ishwaryamphysio2687?si=HTg4DojVZGYZm0dh",
+    facebook: "#",
+    instagram: "#",
   },
   hours: "Monday – Saturday: 9:00 AM – 7:00 PM | Sunday: Closed",
   rating: {
