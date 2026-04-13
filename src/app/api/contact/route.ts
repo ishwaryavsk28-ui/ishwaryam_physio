@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     const data = await resend.emails.send({
       from: process.env.FROM_EMAIL || 'Ishwaryam Physiotherapy <onboarding@resend.dev>',
       to: process.env.TO_EMAIL || 'ishwaryavsk28@gmail.com',
-      subject: `🛎️ New Recovery Request — ${name}`,
+      subject: `🚨 Ishwaryam Recovery Request — ${name}`,
       html: `
         <div style="font-family: 'Inter', system-ui, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #E0ECEC; border-radius: 24px; overflow: hidden; background-color: #F7F9F8;">
           <div style="background-color: #0A6E6E; padding: 48px 32px; text-align: center;">
