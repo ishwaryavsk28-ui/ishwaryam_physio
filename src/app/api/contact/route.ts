@@ -68,11 +68,6 @@ export async function POST(req: Request) {
               <p style="margin: 0; color: #4A6060; font-size: 14px; line-height: 1.6;">${message || 'The patient did not provide additional history.'}</p>
             </div>
             
-            <div style="margin-top: 40px; text-align: center;">
-              <a href="tel:${phone}" style="display: inline-block; padding: 18px 40px; background-color: #0A6E6E; color: #FFFFFF; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; border-radius: 8px; box-shadow: 0 10px 20px rgba(10, 110, 110, 0.15);">
-                Initiate Recovery Assessment
-              </a>
-            </div>
           </div>
           
           <div style="background-color: #F7F9F8; padding: 32px; text-align: center; border-top: 1px solid #E0ECEC;">
