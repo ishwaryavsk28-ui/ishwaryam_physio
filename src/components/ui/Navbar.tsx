@@ -50,7 +50,7 @@ export default function Navbar() {
               {CLINIC_DATA.shortName}
             </span>
             <span className={`text-[8px] font-ui font-bold uppercase tracking-[0.3em] transition-all duration-300 ${scrolled ? 'text-text-muted' : 'text-white/60'}`}>
-              Rehabilitation Center
+              Physiotherapy speciality clinic
             </span>
           </div>
         </Link>

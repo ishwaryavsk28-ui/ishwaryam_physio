@@ -1,5 +1,5 @@
 export const CLINIC_DATA = {
-  name: "Ishwaryam Physiotherapy Speciality Clinic & Rehabilitation Center",
+  name: "Ishwaryam Physiotherapy speciality clinic",
   shortName: "Ishwaryam",
   doctor: {
     name: "Dr. S. Ishwarya",
@@ -7,7 +7,7 @@ export const CLINIC_DATA = {
     credentialFull: "Bachelor of Physiotherapy | Member, Indian Association of Physiotherapists",
     tagline: "Your Wellness. Our Purpose.",
     taglineTamil: "உங்கள் நலம்... எங்கள் நோக்கம்",
-    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy Speciality Clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With her Bachelor of Physiotherapy degree and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings clinical precision to every assessment, and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
+    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy speciality clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With her Bachelor of Physiotherapy degree and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings clinical precision to every assessment, and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
   },
   address: {
     line1: "No. 52, Neeli Govindappa Chetty Street (Neeligovindhappan St)",
@@ -116,7 +116,7 @@ export const SERVICES: Service[] = [
   },
   {
     title: "Sports Injury Treatment",
-    description: "From ACL tears to shoulder impingement — return-to-sport programs designed at Ishwaryam Clinic.",
+    description: "From ACL tears to shoulder impingement — return-to-sport programs designed at Ishwaryam Physiotherapy speciality clinic.",
     icon: "Dumbbell",
     clinicalData: {
       focus: "Performance Optimization & Re-injury Prevention",

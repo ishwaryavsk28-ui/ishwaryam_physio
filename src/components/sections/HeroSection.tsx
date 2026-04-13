@@ -33,7 +33,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[110vh] flex items-center pt-32 pb-20 overflow-hidden gradient-hero text-white">
+    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden gradient-hero text-white">
       {/* Healing Psychology Layers — Vitality Glows */}
       {!prefersReducedMotion && (
         <div className="absolute inset-0 pointer-events-none">

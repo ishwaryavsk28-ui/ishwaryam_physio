@@ -80,6 +80,7 @@
 }
 
 @layer utilities {
+
   .gradient-hero {
     background: radial-gradient(circle at top right, #0D8F8F 0%, #0A6E6E 40%, #061E1E 100%);
   }
@@ -91,10 +92,10 @@
   /* Vitality Layers for Psychology */
   .vitality-glow {
     position: absolute;
-    width: 60vw;
-    height: 60vw;
+    width: 40vw;
+    height: 40vw;
     background: radial-gradient(circle, var(--color-vitality-amber) 0%, transparent 70%);
-    opacity: 0.2;
+    opacity: 0.15;
     filter: blur(80px);
     border-radius: 50%;
     pointer-events: none;
@@ -103,9 +104,9 @@
 
   .rose-glow {
     background: radial-gradient(circle, var(--color-vitality-rose) 0%, transparent 70%);
-    width: 40vw;
-    height: 40vw;
-    opacity: 0.3;
+    width: 30vw;
+    height: 30vw;
+    opacity: 0.2;
   }
 
   /* Advanced Scroll Reveal Utilities */

@@ -35,7 +35,7 @@ export default function FooterSection() {
                   {CLINIC_DATA.shortName}
                 </span>
                 <span className="text-[10px] font-ui font-bold text-accent tracking-[0.3em] uppercase mt-2">
-                  Rehabilitation Center
+                  Physiotherapy speciality clinic
                 </span>
               </div>
             </Link>
