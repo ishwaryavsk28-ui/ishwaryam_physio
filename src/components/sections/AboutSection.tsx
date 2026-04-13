@@ -6,7 +6,7 @@ import { CheckCircle2, Award, Users, ShieldCheck } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="pt-20 md:pt-24 pb-0 bg-white relative overflow-hidden">
+    <section id="about" className="pt-20 md:pt-24 pb-20 md:pb-32 bg-white relative overflow-hidden">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           
@@ -45,11 +45,11 @@ export default function AboutSection() {
             </div>
 
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: 0.2 }}
-              className="relative md:absolute md:bottom-[-20px] md:left-[-60px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20 mb-8 md:mb-0"
+              className="relative md:absolute md:top-[-10px] md:right-[-40px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20 mb-8 md:mb-0"
             >
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
