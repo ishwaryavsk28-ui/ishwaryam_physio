@@ -1,19 +1,17 @@
-"use client";
-
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, ElementType } from "react";
 import { useInView, motion } from "framer-motion";
 
 interface AnimatedCounterProps {
   value: string;
   label: string;
+  icon?: ElementType;
 }
 
-export default function AnimatedCounter({ value, label }: AnimatedCounterProps) {
+export default function AnimatedCounter({ value, label, icon: Icon }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   
-  // Extract number and suffix (e.g., "5.0★" -> 5, "★"; "15+" -> 15, "+")
   const numValue = parseFloat(value.replace(/[^0-9.]/g, ""));
   const suffix = value.replace(/[0-9.]/g, "");
 
@@ -22,7 +20,6 @@ export default function AnimatedCounter({ value, label }: AnimatedCounterProps) 
       let start = 0;
       const end = numValue;
       const duration = 2000;
-      const stepTime = Math.max(duration / end, 20);
       
       const timer = setInterval(() => {
         start += (end - start) * 0.1;
@@ -39,18 +36,27 @@ export default function AnimatedCounter({ value, label }: AnimatedCounterProps) 
   }, [isInView, numValue]);
 
   return (
-    <div ref={ref} className="text-center flex flex-col items-center">
-      <div className="flex items-baseline mb-1">
-        <motion.span 
-          className="text-4xl md:text-5xl font-mono font-bold text-accent"
-        >
-          {Number.isInteger(numValue) ? Math.floor(count) : count.toFixed(1)}
-        </motion.span>
-        <span className="text-2xl md:text-3xl font-mono font-bold text-accent ml-1">
-          {suffix}
-        </span>
+    <div ref={ref} className="text-center flex flex-col items-center group">
+      <div className="flex flex-col items-center mb-4">
+        {Icon && (
+          <div className="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+            <Icon className="w-6 h-6" />
+          </div>
+        )}
+        <div className="flex items-baseline">
+          <motion.span 
+            className="text-5xl md:text-6xl font-mono font-bold text-accent tracking-tighter"
+          >
+            {numValue > 1000 
+              ? Math.floor(count).toLocaleString() 
+              : (Number.isInteger(numValue) ? Math.floor(count) : count.toFixed(1))}
+          </motion.span>
+          <span className="text-3xl md:text-4xl font-mono font-bold text-accent ml-1">
+            {suffix}
+          </span>
+        </div>
       </div>
-      <p className="text-[12px] md:text-sm font-ui font-medium text-text-secondary uppercase tracking-wider text-center max-w-[150px]">
+      <p className="text-[10px] md:text-[11px] font-ui font-bold text-text-secondary uppercase tracking-[0.2em] leading-relaxed text-center max-w-[180px]">
         {label}
       </p>
     </div>

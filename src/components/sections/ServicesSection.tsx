@@ -11,6 +11,13 @@ const SERVICE_IMAGES: Record<string, string> = {
   "Neurological Rehabilitation": "/images/neuro_physio.png",
   "Post-Surgical Recovery": "/images/post_surgical_physio.png",
   "Sports Injury Treatment": "/images/sports_physio.png",
+  "Neck Pain & Cervical Spondylosis": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80",
+  "Diabetic Neuropathy Management": "/images/diabetic_physio.png",
+  "Musculoskeletal Therapy": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+  "Geriatric Physiotherapy": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+  "Pediatric Physiotherapy": "https://images.unsplash.com/photo-1536704689252-ed80b6732450?auto=format&fit=crop&q=80",
+  "Shoulder, Knee & Hip Joint Pain": "https://images.unsplash.com/photo-1598184273446-9446a4906579?auto=format&fit=crop&q=80",
+  "Home Visit Physiotherapy": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80",
 };
 
 export default function ServicesSection() {

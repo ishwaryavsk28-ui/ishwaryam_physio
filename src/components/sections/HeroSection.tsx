@@ -53,11 +53,11 @@ export default function HeroSection() {
             {/* Medical Trust Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-pill px-4 py-2 mb-8"
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-pill px-6 py-2.5 mb-8"
             >
-              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="text-[10px] md:text-xs font-ui font-bold uppercase tracking-widest text-white/90">
-                Gudiyatham&apos;s #1 Rehabilitation Center
+              <div className="w-2.5 h-2.5 rounded-full bg-accent shadow-[0_0_15px_rgba(200,151,58,0.5)] animate-pulse" />
+              <span className="text-[10px] md:text-xs font-ui font-extrabold uppercase tracking-[0.3em] text-white/90">
+                Regional Leader in Specialized Rehabilitation
               </span>
             </motion.div>
 

@@ -39,8 +39,8 @@ export default function AboutSection() {
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-3xl font-display font-bold text-primary">15+</h4>
-                  <p className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted">Verified Results</p>
+                  <h4 className="text-3xl font-display font-bold text-primary">200+</h4>
+                  <p className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted">Clinical Successes</p>
                 </div>
               </div>
               <p className="text-xs font-ui text-text-secondary leading-relaxed">
