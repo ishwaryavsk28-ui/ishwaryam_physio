@@ -70,7 +70,7 @@ export async function POST(req: Request) {
             
             <div style="margin-top: 40px; text-align: center;">
               <a href="tel:${phone}" style="display: inline-block; padding: 18px 40px; background-color: #0A6E6E; color: #FFFFFF; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; border-radius: 8px; box-shadow: 0 10px 20px rgba(10, 110, 110, 0.15);">
-                Call Patient Now
+                Initiate Recovery Assessment
               </a>
             </div>
           </div>
