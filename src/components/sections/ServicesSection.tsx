@@ -24,7 +24,7 @@ export default function ServicesSection() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-bg relative overflow-hidden">
+    <section id="services" className="pt-0 pb-20 md:pb-32 bg-bg relative overflow-hidden">
       {/* Background Psychology Layers */}
       <div className="vitality-layer top-0 right-0 -translate-y-1/2 translate-x-1/2" />
       <div className="vitality-layer bottom-0 left-0 translate-y-1/2 -translate-x-1/2 rose-glow" />

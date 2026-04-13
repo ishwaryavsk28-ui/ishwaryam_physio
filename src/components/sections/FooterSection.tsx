@@ -23,11 +23,11 @@ export default function FooterSection() {
           {/* Brand Identity Column */}
           <div className="lg:col-span-4 max-w-sm">
             <Link href="/" className="flex items-center gap-5 mb-10 group">
-              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white/20 bg-white shadow-premium">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white/20 bg-white shadow-premium flex items-center justify-center aspect-square p-1.5 flex-shrink-0">
                 <img 
                   src="/logo.png" 
                   alt={CLINIC_DATA.shortName}
-                  className="w-full h-full object-contain p-1"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col">

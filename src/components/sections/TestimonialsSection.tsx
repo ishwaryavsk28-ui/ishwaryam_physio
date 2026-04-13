@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
   const loopedReviews = [...TESTIMONIALS, ...TESTIMONIALS];
 
   return (
-    <section id="reviews" className="section-padding bg-white relative overflow-hidden">
+    <section id="about" className="pt-20 md:pt-24 pb-0 bg-white relative overflow-hidden">
       {/* Healing Psychology Layers */}
       <div className="vitality-glow top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 rose-glow" />
       <div className="vitality-glow bottom-0 right-0 translate-y-1/2 translate-x-1/2 opacity-10" />
@@ -87,17 +87,24 @@ export default function TestimonialsSection() {
       </div>
 
       {/* Proof Badge */}
-      <div className="container-custom mt-20 flex justify-center">
-        <div className="inline-flex items-center gap-4 py-3 px-6 bg-bg rounded-pill border border-border">
-          <div className="flex -space-x-2">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-text-muted" />
+      <div className="container-custom mt-24 flex justify-center">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-6 py-4 px-10 bg-primary/5 rounded-2xl border border-primary/20 shadow-premium"
+        >
+          <div className="flex -space-x-3">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-bg flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/30" />
+              </div>
             ))}
           </div>
-          <p className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-secondary">
-            Join <span className="text-primary">100+ Recovered Patients</span> in Gudiyatham
+          <p className="text-xs font-ui font-extrabold uppercase tracking-[0.2em] text-text-primary">
+            Join <span className="text-primary italic">200+ Verified Success Stories</span> in Gudiyatham
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
