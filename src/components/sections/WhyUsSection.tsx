@@ -21,6 +21,11 @@ const features = [
     icon: Heart,
   },
   {
+    title: "Specialized Home Care",
+    description: "Privacy-first home therapy with specialized therapist assignments — Women for Women | Men for Men — for your absolute comfort.",
+    icon: ShieldCheck,
+  },
+  {
     title: "Rooted in Gudiyatham",
     description: "We are not a chain clinic. We are your neighbor. We know this community, its people, and its needs.",
     icon: MapPin,

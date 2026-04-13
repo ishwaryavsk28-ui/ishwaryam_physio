@@ -7,7 +7,8 @@ export const CLINIC_DATA = {
     credentialFull: "Bachelor of Physiotherapy | Member, Indian Association of Physiotherapists",
     tagline: "Your Wellness. Our Purpose.",
     taglineTamil: "உங்கள் நலம்... எங்கள் நோக்கம்",
-    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy speciality clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With her Bachelor of Physiotherapy degree and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings clinical precision to every assessment, and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
+    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy speciality clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With 6+ years of clinical excellence, her Bachelor of Physiotherapy degree, and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings surgical precision to every assessment and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
+    experience: "6+ Years",
   },
   address: {
     line1: "No. 52, Neeli Govindappa Chetty Street (Neeligovindhappan St)",
@@ -228,11 +229,11 @@ export const SERVICES: Service[] = [
   },
   {
     title: "Home Visit Physiotherapy",
-    description: "Clinic-quality treatment delivered to your home by Ishwaryam Physiotherapy specialists.",
+    description: "Clinic-quality treatment delivered to your home by specialized therapists (Women for Women | Men for Men available).",
     icon: "Home",
     clinicalData: {
       focus: "In-situ Functional Recovery",
-      objectives: ["Clinic-standard care at home", "Home environment optimization", "Caregiver support"],
+      objectives: ["Clinic-standard care at home", "Gender-specific therapist options", "Home environment optimization", "Caregiver support"],
       protocol: [
         { phase: "Setup", action: "Portable equipment deployment and safety audit." },
         { phase: "Care", action: "Standard clinical protocols adapted for home." },

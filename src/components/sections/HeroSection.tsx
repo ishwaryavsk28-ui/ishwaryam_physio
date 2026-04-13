@@ -57,7 +57,7 @@ export default function HeroSection() {
             >
               <div className="w-2.5 h-2.5 rounded-full bg-accent shadow-[0_0_15px_rgba(200,151,58,0.5)] animate-pulse" />
               <span className="text-[10px] md:text-xs font-ui font-extrabold uppercase tracking-[0.3em] text-white/90">
-                Regional Leader in Specialized Rehabilitation
+                6+ Years of Clinical Excellence
               </span>
             </motion.div>
 

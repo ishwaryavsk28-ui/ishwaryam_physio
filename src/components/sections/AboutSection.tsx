@@ -68,7 +68,17 @@ export default function AboutSection() {
                   className="bg-primary/5 border border-primary/10 px-4 py-2 rounded-full flex items-center gap-2"
                 >
                   <Award className="w-3 h-3 text-primary" />
-                  <span className="text-[9px] font-ui font-extrabold text-primary uppercase tracking-widest">200+ Clinical Success Stories</span>
+                  <span className="text-[9px] font-ui font-extrabold text-primary uppercase tracking-widest">200+ Clinical Successes</span>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="bg-accent/5 border border-accent/10 px-4 py-2 rounded-full flex items-center gap-2"
+                >
+                  <ShieldCheck className="w-3 h-3 text-accent" />
+                  <span className="text-[9px] font-ui font-extrabold text-accent uppercase tracking-widest">6+ Years Clinical Excellence</span>
                 </motion.div>
               </div>
               <div className="relative">
