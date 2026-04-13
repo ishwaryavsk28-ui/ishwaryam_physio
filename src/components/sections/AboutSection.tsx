@@ -66,7 +66,7 @@ export default function AboutSection() {
                 Movement is Medicine. <br />
                 <span className="text-primary italic">Expertise</span> is the Cure.
               </h2>
-            </motion.h2>
+            </motion.div>
 
             <p className="text-lg text-text-secondary leading-relaxed font-ui mb-10">
               {CLINIC_DATA.doctor.bio}
