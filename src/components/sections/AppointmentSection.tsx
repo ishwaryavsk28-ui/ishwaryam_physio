@@ -225,8 +225,8 @@ export default function AppointmentSection() {
                     )}
                   </button>
                   
-                  <p className="text-[10px] font-ui font-bold text-center text-text-muted uppercase tracking-widest pt-4 opacity-50">
-                    Trusted by 100+ local patients for fast recovery
+                  <p className="text-[10px] font-ui font-bold text-center text-text-muted uppercase tracking-widest pt-4 opacity-70">
+                    Regional Leader in Specialized Clinical Outcomes
                   </p>
                 </form>
               )}
