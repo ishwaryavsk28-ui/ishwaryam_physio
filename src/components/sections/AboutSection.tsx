@@ -20,7 +20,7 @@ export default function AboutSection() {
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10 group"
               >
                 <img
-                  src="/images/doctor_ish.png"
+                  src="/images/doctor_ish.jpg"
                   alt="Dr. Ishwarya — Lead Physiotherapist"
                   className="w-full h-full object-cover"
                 />
