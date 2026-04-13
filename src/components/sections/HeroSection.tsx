@@ -101,7 +101,7 @@ export default function HeroSection() {
                 target="_blank"
                 className="btn-premium bg-accent hover:bg-white hover:text-primary text-white text-sm uppercase tracking-[0.2em] group"
               >
-                Strategic Consultation
+                Expert Consultation
                 <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-2" />
               </Link>
               
@@ -113,7 +113,7 @@ export default function HeroSection() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-widest text-white/50 font-bold mb-0.5">Primary Clinical Access</p>
+                  <p className="text-[10px] uppercase tracking-widest text-white/50 font-bold mb-0.5">Call Our Clinic</p>
                   <p className="text-lg font-ui font-bold">{CLINIC_DATA.contact.primary}</p>
                 </div>
               </Link>

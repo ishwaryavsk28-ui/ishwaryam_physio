@@ -49,8 +49,8 @@ export default function ServicesSection() {
             viewport={{ once: true }}
             className="text-7xl md:text-[140px] font-display font-bold leading-[0.8] tracking-tighter mb-16"
           >
-            Precision <span className="text-primary italic">Biomechanics</span> <br />
-            & Movement Science.
+            Expert Care. <br />
+            Better <span className="text-primary italic">Movement</span>.
           </motion.h2>
 
           <motion.p 
@@ -241,7 +241,7 @@ export default function ServicesSection() {
                     onClick={() => setSelectedService(null)}
                     className="w-full py-6 bg-primary text-white rounded-button font-ui font-bold text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-4 hover:bg-accent transition-all shadow-xl hover:shadow-premium"
                   >
-                    Initiate Clinical Assessment
+                    Start Your Recovery
                     <ArrowRight className="w-5 h-5" />
                   </a>
                 </div>

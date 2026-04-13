@@ -99,7 +99,7 @@ export default function AboutSection() {
                 href="#contact"
                 className="px-10 py-4 bg-primary text-white rounded-button font-ui font-bold text-xs uppercase tracking-[0.2em] hover:bg-accent transition-all shadow-lg hover:shadow-premium"
               >
-                Consult with Expertise
+                Consult with Our Expert
               </a>
             </div>
           </div>
