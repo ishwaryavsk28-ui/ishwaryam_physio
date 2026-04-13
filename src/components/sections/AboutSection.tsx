@@ -6,7 +6,7 @@ import { CheckCircle2, Award, Users, ShieldCheck } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-padding bg-white relative overflow-hidden">
+    <section id="about" className="py-20 md:py-24 bg-white relative overflow-hidden">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           
@@ -16,11 +16,11 @@ export default function AboutSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative aspect-[4/5] rounded-[64px] overflow-hidden shadow-premium"
+              className="relative aspect-[4/5] rounded-[24px] overflow-hidden shadow-premium"
             >
               <img
-                src="/images/orthopedic_physio.png"
-                alt="Dr. Ishwarya in session"
+                src="/images/doctor_ish.png"
+                alt="Dr. Ishwarya — Lead Physiotherapist"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
@@ -32,7 +32,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="absolute -bottom-10 -right-10 glass-panel p-10 rounded-[40px] shadow-2xl border-white/20 max-w-[280px]"
+              className="absolute -bottom-10 -right-10 glass-panel p-10 rounded-[16px] shadow-2xl border-white/20 max-w-[280px]"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white">

@@ -7,27 +7,27 @@ import { Search, Map as MapIcon, Activity, Zap, CheckCircle2 } from "lucide-reac
 const steps = [
   {
     icon: Search,
-    title: "Clinical Assessment",
-    description: "Deep-dive diagnostic into your neuro-muscular root cause. We don't just look at where it hurts; we find why it hurts.",
-    subtext: "Duration: 45-60 Mins",
+    title: "Diagnostic Rigor",
+    description: "A comprehensive 60-point neuro-muscular assessment. We isolate the biomechanical failure, not just the symptom, using advanced orthopedic testing protocols.",
+    subtext: "Clinical Assessment Phase",
   },
   {
     icon: MapIcon,
     title: "Recovery Architecture",
-    description: "Designing a world-class protocol tailored to your unique biology, lifestyle, and recovery timeline.",
-    subtext: "Bespoke Movement Plan",
+    description: "Engineering a bespoke clinical roadmap. We calculate loading cycles and recovery curves specific to your physiological baseline and movement goals.",
+    subtext: "Strategic Protocol Design",
   },
   {
     icon: Activity,
-    title: "Active Rehabilitation",
-    description: "Evidence-based manual therapy and neurological training to rebuild function and erase movement compensations.",
-    subtext: "Clinical Precision",
+    title: "Clinical Intervention",
+    description: "Surgical-grade manual therapy combined with corrective movement patterns. We reset the nervous system to restore functional autonomy.",
+    subtext: "Active Rehabilitation",
   },
   {
     icon: Zap,
-    title: "Functional Evolution",
-    description: "Hardening your body against future injury and transitioning back to your optimal performance level.",
-    subtext: "Future-Proofing",
+    title: "Functional Hardening",
+    description: "Transitioning from recovery to resilience. We proof your body against re-injury by reinforcing structural integrity through high-fidelity motor control.",
+    subtext: "Performance Evolution",
   },
 ];
 

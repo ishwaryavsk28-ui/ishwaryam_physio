@@ -11,20 +11,20 @@ const SERVICE_IMAGES: Record<string, string> = {
   "Neurological Rehabilitation": "/images/neuro_physio.png",
   "Post-Surgical Recovery": "/images/post_surgical_physio.png",
   "Sports Injury Treatment": "/images/sports_physio.png",
-  "Neck Pain & Cervical Spondylosis": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80",
+  "Neck Pain & Cervical Spondylosis": "/images/neck_physio.png",
   "Diabetic Neuropathy Management": "/images/diabetic_physio.png",
-  "Musculoskeletal Therapy": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
-  "Geriatric Physiotherapy": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
-  "Pediatric Physiotherapy": "https://images.unsplash.com/photo-1536704689252-ed80b6732450?auto=format&fit=crop&q=80",
-  "Shoulder, Knee & Hip Joint Pain": "https://images.unsplash.com/photo-1598184273446-9446a4906579?auto=format&fit=crop&q=80",
-  "Home Visit Physiotherapy": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80",
+  "Musculoskeletal Therapy": "/images/musculoskeletal_physio.png",
+  "Geriatric Physiotherapy": "/images/geriatric_physio.png",
+  "Pediatric Physiotherapy": "/images/pediatric_physio.png",
+  "Shoulder, Knee & Hip Joint Pain": "/images/joint_physio.png",
+  "Home Visit Physiotherapy": "/images/home_physio.png",
 };
 
 export default function ServicesSection() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
-    <section id="services" className="section-padding bg-bg relative overflow-hidden">
+    <section id="services" className="py-20 md:py-32 bg-bg relative overflow-hidden">
       {/* Background Psychology Layers */}
       <div className="vitality-layer top-0 right-0 -translate-y-1/2 translate-x-1/2" />
       <div className="vitality-layer bottom-0 left-0 translate-y-1/2 -translate-x-1/2 rose-glow" />
@@ -76,7 +76,7 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1, duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="group flex flex-col h-[650px] rounded-t-[48px] rounded-b-[32px] overflow-hidden bg-white shadow-card hover:shadow-premium transition-all duration-500"
+                className="group flex flex-col h-[680px] rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:border-primary/30 hover:shadow-premium transition-all duration-500"
               >
                 {/* Image Container (Top 50%) */}
                 <div className="relative h-1/2 overflow-hidden bg-bg">
@@ -94,7 +94,7 @@ export default function ServicesSection() {
                   <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500" />
                   
                   <div className="absolute bottom-6 left-6">
-                    <span className="px-5 py-2 rounded-pill bg-white/90 backdrop-blur-md border border-white/20 text-[9px] font-ui font-bold uppercase tracking-widest text-primary shadow-sm">
+                    <span className="px-4 py-1.5 rounded-lg bg-white/95 backdrop-blur-md border border-border text-[9px] font-ui font-bold uppercase tracking-widest text-primary shadow-sm">
                       {service.title.split(' ')[0]} Protocol
                     </span>
                   </div>
