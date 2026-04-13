@@ -45,27 +45,27 @@ export default function ProcessSection() {
   });
 
   return (
-    <section ref={containerRef} className="section-padding bg-white relative overflow-hidden">
+    <section ref={containerRef} className="section-padding bg-primary/[0.02] relative overflow-hidden">
       {/* Healing Psychology Layers */}
-      <div className="vitality-glow top-0 left-0 -translate-y-1/2 -translate-x-1/2 opacity-10" />
-      <div className="vitality-glow bottom-0 right-0 translate-y-1/2 translate-x-1/2 rose-glow opacity-20" />
+      <div className="vitality-glow top-0 left-0 -translate-y-1/2 -translate-x-1/2 opacity-5" />
+      <div className="vitality-glow bottom-0 right-0 translate-y-1/2 translate-x-1/2 rose-glow opacity-10" />
 
       <div className="container-custom relative z-10">
-        <div className="max-w-4xl mb-32">
+        <div className="max-w-4xl mb-20 md:mb-32">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-8"
           >
-            <div className="h-px w-12 bg-accent" />
+            <div className="h-px w-12 bg-accent/50" />
             <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase">
               Ishwaryam Recovery Protocol
             </span>
           </motion.div>
           
-          <h2 className="text-6xl md:text-8xl font-display font-bold text-text-primary leading-[1.05] mb-12">
-            A Masterclass in <br />
+          <h2 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold text-text-primary leading-[1.1] mb-12 tracking-tight">
+            A Masterclass in <br className="hidden md:block" />
             <span className="text-primary italic">Recovery</span> Science.
           </h2>
         </div>
@@ -82,30 +82,31 @@ export default function ProcessSection() {
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.2, duration: 0.8 }}
+              transition={{ delay: idx * 0.15, duration: 0.6 }}
               viewport={{ once: true }}
               className="relative group"
             >
               {/* Step Number Badge */}
               <div className="w-24 h-24 rounded-[32px] bg-white border border-border shadow-sm flex items-center justify-center mb-10 group-hover:border-primary/30 group-hover:shadow-premium transition-all duration-500 relative z-10 mx-auto lg:mx-0">
-                 <step.icon className="w-10 h-10 text-primary group-hover:scale-110 transition-transform duration-500" />
-                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center text-[10px] font-bold font-ui">
+                 <div className="absolute inset-2 border border-dashed border-primary/10 rounded-[24px] pointer-events-none" />
+                 <step.icon className="w-9 h-9 text-primary group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center text-[10px] font-bold font-ui shadow-lg ring-4 ring-white">
                     0{idx + 1}
                  </div>
               </div>
 
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-display font-bold text-text-primary mb-4">
+                <h3 className="text-xl md:text-2xl font-display font-bold text-text-primary mb-4">
                   {step.title}
                 </h3>
                 <p className="text-sm font-ui text-text-secondary leading-relaxed mb-6 pr-4">
                   {step.description}
                 </p>
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-bg rounded-pill border border-border">
-                   <div className="w-2 h-2 rounded-full bg-primary/40" />
-                   <span className="text-[10px] font-ui font-bold text-text-muted uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-pill border border-border shadow-sm">
+                   <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                   <span className="text-[9px] font-ui font-bold text-text-muted uppercase tracking-wider">
                       {step.subtext}
                    </span>
                 </div>

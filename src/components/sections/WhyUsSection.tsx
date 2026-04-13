@@ -60,20 +60,20 @@ export default function WhyUsSection() {
           {features.map((feature, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: idx * 0.1, duration: 0.6 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.1, duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="flex gap-6 p-8 rounded-2xl bg-white border border-border shadow-sm group hover:shadow-hover transition-all"
+              className="flex gap-6 p-8 rounded-3xl bg-gradient-to-br from-white to-[#F7F9F8]/50 border border-border/60 shadow-[0_4px_20px_-4px_rgba(10,110,110,0.05)] backdrop-blur-sm group hover:shadow-[0_20px_40px_-12px_rgba(10,110,110,0.1)] hover:border-primary/20 transition-all duration-500"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <feature.icon className="w-6 h-6" />
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-[0_0_15px_rgba(10,110,110,0.05)] group-hover:shadow-[0_10px_20px_rgba(10,110,110,0.2)]">
+                <feature.icon className="w-6 h-6 group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold text-text-primary mb-3">
+                <h3 className="text-xl md:text-2xl font-display font-bold text-text-primary mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-text-secondary font-ui leading-relaxed">
+                <p className="text-text-secondary font-ui leading-relaxed text-sm md:text-base">
                   {feature.description}
                 </p>
               </div>
