@@ -86,34 +86,6 @@ export default function TestimonialsSection() {
         <div className="absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-white to-transparent z-10" />
       </div>
 
-      {/* Proof Badge */}
-      <div className="container-custom mt-20 flex justify-center">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="inline-flex flex-col sm:flex-row items-center gap-8 py-8 px-12 bg-primary text-white rounded-[32px] shadow-premium border border-white/10 relative overflow-hidden group"
-        >
-          {/* Power Background Accent */}
-          <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-          
-          <div className="flex -space-x-4 relative z-10">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="w-14 h-14 rounded-full border-4 border-primary bg-bg flex items-center justify-center overflow-hidden shadow-xl">
-                <div className="w-full h-full bg-gradient-to-br from-white/10 to-white/30" />
-              </div>
-            ))}
-          </div>
-          <div className="relative z-10 text-center sm:text-left">
-            <p className="text-sm font-ui font-extrabold uppercase tracking-[0.2em] mb-1">
-              Clinical Worth Established
-            </p>
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-accent">
-              Join 200+ Verified Patient Success Stories
-            </h3>
-          </div>
-        </motion.div>
-      </div>
     </section>
   );
 }
