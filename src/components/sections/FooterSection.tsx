@@ -66,11 +66,13 @@ export default function FooterSection() {
                 <Link 
                   href={CLINIC_DATA.contact.instagram} 
                   target="_blank"
-                  className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white hover:border-transparent hover:shadow-[0_0_20px_rgba(238,42,123,0.3)] transition-all duration-300 group/social"
+                  className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:border-transparent hover:shadow-[0_0_20px_rgba(238,42,123,0.3)] transition-all duration-300 group/social"
                   aria-label="Follow us on Instagram"
                 >
-                  <svg className="w-5 h-5 group-hover/social:scale-110 transition-transform fill-current" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 1.764.308 2.227.77.462.463.708.861.77 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.308 1.764-.77 2.227-.463.462-.861.708-2.227.77-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-1.764-.308-2.227-.77-.462-.463-.708-.861-.77-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.308-1.764.77-2.227.463-.462.861-.708 2.227-.77 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-4.78 2.618-4.78 6.94s.422 6.74 4.78 6.94c1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c4.358-.2 4.78-2.618 4.78-6.94s-.422-6.74-4.78-6.94c-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  <svg className="w-5 h-5 group-hover/social:scale-110 transition-transform fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </Link>
 
