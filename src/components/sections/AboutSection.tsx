@@ -16,10 +16,10 @@ export default function AboutSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative aspect-[4/5] rounded-[24px] overflow-hidden shadow-premium"
+              className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-8 border-bg shadow-premium"
             >
               <img
-                src="/images/doctor_ish.png"
+                src="/doctor_portrait.png"
                 alt="Dr. Ishwarya — Lead Physiotherapist"
                 className="w-full h-full object-cover"
               />
@@ -62,7 +62,7 @@ export default function AboutSection() {
               <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">
                 Clinical Philosophy
               </span>
-              <h2 className="text-6xl md:text-[80px] font-display font-bold text-text-primary leading-[1.1] mb-12">
+              <h2 className="text-6xl md:text-[90px] font-display font-bold text-text-primary leading-[1] tracking-tight mb-12">
                 Movement is Medicine. <br />
                 <span className="text-primary italic">Expertise</span> is the Cure.
               </h2>
@@ -99,7 +99,7 @@ export default function AboutSection() {
                 href="#contact"
                 className="px-10 py-4 bg-primary text-white rounded-button font-ui font-bold text-xs uppercase tracking-[0.2em] hover:bg-accent transition-all shadow-lg hover:shadow-premium"
               >
-                Meet the Doctor
+                Consult with Expertise
               </a>
             </div>
           </div>

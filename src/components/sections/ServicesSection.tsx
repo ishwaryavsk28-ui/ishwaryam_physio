@@ -47,10 +47,10 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-display font-bold text-text-primary leading-[1.05] mb-12"
+            className="text-7xl md:text-[140px] font-display font-bold leading-[0.8] tracking-tighter mb-16"
           >
-            Engineering <span className="text-primary italic">Precision</span> <br /> 
-            into Human Movement.
+            Precision <span className="text-primary italic">Biomechanics</span> <br />
+            & Movement Science.
           </motion.h2>
 
           <motion.p 
