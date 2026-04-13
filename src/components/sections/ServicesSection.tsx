@@ -47,8 +47,11 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-display font-bold leading-[1] tracking-tighter mb-16"
+            className="text-6xl md:text-8xl font-display font-bold leading-[1] tracking-tighter mb-16 relative"
           >
+            {/* Entry Path from About */}
+            <div className="hidden lg:block absolute -left-12 -top-24 w-px h-32 bg-gradient-to-b from-accent to-transparent" />
+            
             Scientific Recovery. <br />
             Lifelong <span className="text-primary italic">Mobility</span>.
           </motion.h2>

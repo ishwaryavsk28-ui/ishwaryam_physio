@@ -118,6 +118,14 @@ export default function HeroSection() {
                 </div>
               </Link>
             </motion.div>
+
+            {/* Clinical Connectivity Path — Exit to About */}
+            <motion.div 
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 160, opacity: 1 }}
+              transition={{ delay: 1.5, duration: 2 }}
+              className="hidden lg:block absolute left-0 bottom-[-80px] w-px bg-gradient-to-b from-accent to-transparent z-10"
+            />
           </motion.div>
 
           {/* Visual Excellence Column */}
