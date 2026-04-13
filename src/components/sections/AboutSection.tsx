@@ -19,7 +19,7 @@ export default function AboutSection() {
               className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-8 border-bg shadow-premium"
             >
               <img
-                src="/doctor_portrait.png"
+                src="/images/doctor_ish.png"
                 alt="Dr. Ishwarya — Lead Physiotherapist"
                 className="w-full h-full object-cover"
               />
@@ -28,23 +28,23 @@ export default function AboutSection() {
 
             {/* Experience Floating Card */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="absolute -bottom-10 -right-10 glass-panel p-10 rounded-[16px] shadow-2xl border-white/20 max-w-[280px]"
+              className="absolute -top-10 -left-10 glass-panel p-8 rounded-[16px] shadow-2xl border-white/20 max-w-[240px]"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white">
-                  <Award className="w-6 h-6" />
+                <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white">
+                  <Award className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-3xl font-display font-bold text-primary">200+</h4>
+                  <h4 className="text-2xl font-display font-bold text-primary">200+</h4>
                   <p className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted">Clinical Successes</p>
                 </div>
               </div>
-              <p className="text-xs font-ui text-text-secondary leading-relaxed">
-                Consistent clinical excellence in Gudiyatham community.
+              <p className="text-[10px] font-ui text-text-secondary leading-tight uppercase font-bold tracking-wider">
+                Consistent clinical excellence in Gudiyatham.
               </p>
             </motion.div>
 
@@ -62,9 +62,9 @@ export default function AboutSection() {
               <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">
                 Clinical Philosophy
               </span>
-              <h2 className="text-6xl md:text-[90px] font-display font-bold text-text-primary leading-[1] tracking-tight mb-12">
-                Movement is Medicine. <br />
-                <span className="text-primary italic">Expertise</span> is the Cure.
+              <h2 className="text-6xl md:text-8xl font-display font-bold text-text-primary leading-[1] tracking-tighter mb-12">
+                Transforming Pain <br />
+                into <span className="text-primary italic">Purpose</span>.
               </h2>
             </motion.div>
 

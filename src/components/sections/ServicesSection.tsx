@@ -47,10 +47,10 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-7xl md:text-[140px] font-display font-bold leading-[0.8] tracking-tighter mb-16"
+            className="text-6xl md:text-8xl font-display font-bold leading-[1] tracking-tighter mb-16"
           >
-            Expert Care. <br />
-            Better <span className="text-primary italic">Movement</span>.
+            Scientific Recovery. <br />
+            Lifelong <span className="text-primary italic">Mobility</span>.
           </motion.h2>
 
           <motion.p 
