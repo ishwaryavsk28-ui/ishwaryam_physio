@@ -44,13 +44,12 @@ export default function AboutSection() {
               </motion.div>
             </div>
 
-            {/* Experience Floating Card */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="absolute bottom-[-20px] left-[-60px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20"
+              className="relative md:absolute md:bottom-[-20px] md:left-[-60px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20 mb-8 md:mb-0"
             >
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
