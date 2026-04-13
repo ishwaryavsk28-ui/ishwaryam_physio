@@ -34,11 +34,12 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-[110vh] flex items-center pt-32 pb-20 overflow-hidden gradient-hero text-white">
-      {/* Dynamic Background Atmosphere */}
+      {/* Healing Psychology Layers — Vitality Glows */}
       {!prefersReducedMotion && (
         <div className="absolute inset-0 pointer-events-none">
+          <div className="vitality-glow top-0 right-0 -translate-y-1/2 translate-x-1/2 opacity-20" />
+          <div className="vitality-glow bottom-0 left-0 translate-y-1/2 -translate-x-1/2 rose-glow opacity-30" />
           <div className="absolute top-[20%] right-[10%] w-[80vw] h-[80vw] rounded-full bg-accent/20 blur-[150px] animate-heart-beat" />
-          <div className="absolute -bottom-[20%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-primary-light/10 blur-[120px] animate-heart-beat [animation-delay:2s]" />
         </div>
       )}
 
@@ -127,7 +128,7 @@ export default function HeroSection() {
             className="relative hidden lg:block"
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden border border-white/10 shadow-premium aspect-[4/5] group">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
+              <div className="absolute inset-0 bg-[url('/images/orthopedic_physio.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent" />
               
               {/* Doctor Status Badge */}

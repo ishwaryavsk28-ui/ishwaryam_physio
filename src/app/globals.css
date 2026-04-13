@@ -11,6 +11,11 @@
   --color-text-secondary: #4A6060;
   --color-text-muted: #8AA5A5;
   --color-border: #E0ECEC;
+  
+  /* Healing Psychology Tokens */
+  --color-vitality-amber: rgba(251, 219, 157, 0.4);
+  --color-vitality-rose: rgba(253, 232, 233, 0.6);
+  --health-glow: radial-gradient(circle, rgba(200, 151, 58, 0.1) 0%, transparent 70%);
 
   --font-display: var(--font-cormorant);
   --font-ui: var(--font-dm-sans);
@@ -81,6 +86,38 @@
 
   .gradient-subtle {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(247, 249, 248, 1) 100%);
+  }
+
+  /* Vitality Layers for Psychology */
+  .vitality-glow {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, var(--color-vitality-amber) 0%, transparent 70%);
+    opacity: 0.2;
+    filter: blur(80px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .rose-glow {
+    background: radial-gradient(circle, var(--color-vitality-rose) 0%, transparent 70%);
+    width: 40vw;
+    height: 40vw;
+    opacity: 0.3;
+  }
+
+  /* Advanced Scroll Reveal Utilities */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

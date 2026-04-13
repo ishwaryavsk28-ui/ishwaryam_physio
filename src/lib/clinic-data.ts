@@ -7,7 +7,7 @@ export const CLINIC_DATA = {
     credentialFull: "Bachelor of Physiotherapy | Member, Indian Association of Physiotherapists",
     tagline: "Your Wellness. Our Purpose.",
     taglineTamil: "உங்கள் நலம்... எங்கள் நோக்கம்",
-    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy Speciality Clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With her Bachelor of Physiotherapy degree and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings clinical precision to every assessment, and genuine human care to every session. She does not prescribe generic protocols. She listens. She evaluates. She builds a recovery plan that fits your body, your life, and your goals.`,
+    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy Speciality Clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With her Bachelor of Physiotherapy degree and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings clinical precision to every assessment, and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
   },
   address: {
     line1: "No. 52, Neeli Govindappa Chetty Street (Neeligovindhappan St)",
@@ -32,66 +32,215 @@ export const CLINIC_DATA = {
   speciality: "Physiotherapy · Pain Rehabilitation · Neurological Recovery · Sports Medicine",
 };
 
-export const SERVICES = [
+export interface ClinicalProtocol {
+  phase: string;
+  action: string;
+}
+
+export interface Service {
+  title: string;
+  description: string;
+  icon: string;
+  clinicalData: {
+    focus: string;
+    objectives: string[];
+    protocol: ClinicalProtocol[];
+    recoveryWindow: string;
+  };
+}
+
+export const SERVICES: Service[] = [
   {
     title: "Orthopedic Physiotherapy",
     description: "Targeted recovery for fractures, joint replacements, ligament tears, and chronic musculoskeletal dysfunction.",
     icon: "Activity",
+    clinicalData: {
+      focus: "Structural Alignment & Osteokinematics",
+      objectives: ["Restore joint range of motion", "Reverse muscle atrophy", "Pain-free weight bearing"],
+      protocol: [
+        { phase: "Phase 1: Acute", action: "Inflammation control & gentle passive mobilization." },
+        { phase: "Phase 2: Sub-acute", action: "Isometrics & active-assisted range of motion." },
+        { phase: "Phase 3: Strengthening", action: "Progressive resistive exercise & load management." },
+        { phase: "Phase 4: Functional", action: "Proprioceptive training & return to activity." }
+      ],
+      recoveryWindow: "4–12 Weeks"
+    }
   },
   {
     title: "Spine & Back Pain Rehabilitation",
-    description: "Disc bulge, PIVD, scoliosis, lumbar spondylosis — addressed at the structural root, not just the symptom.",
+    description: "Disc bulge, PIVD, scoliosis, lumbar spondylosis — addressed at the structural root at Ishwaryam.",
     icon: "Stethoscope",
+    clinicalData: {
+      focus: "Core Stability & Neural Decompression",
+      objectives: ["Centralization of symptoms", "Improved core endurance", "Ergonomic correction"],
+      protocol: [
+        { phase: "Assessment", action: "Directional preference & neuro-dynamic screening." },
+        { phase: "Correction", action: "McKenzie-based mobilization & postural correction." },
+        { phase: "Stability", action: "Deep core activation (Transversus Abdominis/Multifidus)." },
+        { phase: "Prevention", action: "Mechanical back safety & workplace ergonomics." }
+      ],
+      recoveryWindow: "6–10 Weeks"
+    }
   },
   {
     title: "Neurological Rehabilitation",
     description: "Stroke recovery, Parkinson's management, Bell's palsy — restoring neural pathways through movement science.",
     icon: "Brain",
+    clinicalData: {
+      focus: "Neuroplasticity & Motor Re-learning",
+      objectives: ["Normalize muscle tone", "Improve balance & coordination", "Functional independence"],
+      protocol: [
+        { phase: "Sensorimotor", action: "Proprioceptive neuromuscular facilitation (PNF)." },
+        { phase: "Balance", action: "Static and dynamic equilibrium retraining." },
+        { phase: "Gait", action: "Walking pattern correction and load symmetry." },
+        { phase: "ADL", action: "Integration into Activities of Daily Living." }
+      ],
+      recoveryWindow: "3–12 Months"
+    }
   },
   {
     title: "Post-Surgical Recovery",
     description: "Structured rehabilitation protocols following orthopedic surgeries to restore full pre-operative function.",
     icon: "ClipboardCheck",
+    clinicalData: {
+      focus: "Scar Management & Safe Load Progression",
+      objectives: ["Zero post-op contractures", "Maximum muscle preservation", "Safe return to sport"],
+      protocol: [
+        { phase: "Protection", action: "Suture site care & safe range limitations." },
+        { phase: "Activation", action: "Inhibiting muscle shutdown & controlled loading." },
+        { phase: "Strength", action: "Hypertrophy focus and kinetic chain stability." },
+        { phase: "Impact", action: "Plyometric and sport-specific loading (if applicable)." }
+      ],
+      recoveryWindow: "8–24 Weeks"
+    }
   },
   {
     title: "Sports Injury Treatment",
-    description: "From ACL tears to shoulder impingement — return-to-sport programs designed around your performance goals.",
+    description: "From ACL tears to shoulder impingement — return-to-sport programs designed at Ishwaryam Clinic.",
     icon: "Dumbbell",
+    clinicalData: {
+      focus: "Performance Optimization & Re-injury Prevention",
+      objectives: ["Restored explosive power", "Mechanical efficiency", "Psychological readiness"],
+      protocol: [
+        { phase: "Healing", action: "Soft tissue repair and mechanical unloading." },
+        { phase: "Drills", action: "Low-impact sport-specific movement patterns." },
+        { phase: "Agility", action: "Change of direction and deceleration training." },
+        { phase: "Return", action: "Full-contact or high-intensity sport integration." }
+      ],
+      recoveryWindow: "2–9 Months"
+    }
   },
   {
     title: "Neck Pain & Cervical Spondylosis",
-    description: "Manual therapy and targeted mobilization for cervical dysfunction, radiating arm pain, and tension headaches.",
+    description: "Manual therapy and targeted mobilization for cervical dysfunction and radiating arm pain.",
     icon: "PersonStanding",
+    clinicalData: {
+      focus: "Cervicothoracic Mobility & Postural Reset",
+      objectives: ["Eliminate radiating pain", "Restore neck rotation", "Headache resolution"],
+      protocol: [
+        { phase: "Traction", action: "Manual decompression and pain relief." },
+        { phase: "Mobilization", action: "Apophyseal glides and scapular positioning." },
+        { phase: "Stability", action: "Deep neck flexor endurance training." },
+        { phase: "Dynamic", action: "Kinetic chain integration with upper limb." }
+      ],
+      recoveryWindow: "3–6 Weeks"
+    }
   },
   {
     title: "Diabetic Neuropathy Management",
-    description: "Specialized physiotherapy protocols to manage nerve pain, improve circulation, and restore lower limb function.",
+    description: "Specialized physiotherapy protocols to manage nerve pain and improve circulation.",
     icon: "Waves",
+    clinicalData: {
+      focus: "Peripheral Circulation & Neural Desensitization",
+      objectives: ["Reduced neuropathic pain", "Improved protective sensation", "Fall risk reduction"],
+      protocol: [
+        { phase: "Sensory", action: "Tactile stimulation and desensitization." },
+        { phase: "Vascular", action: "Buerger-Allen exercises for circulation." },
+        { phase: "Balance", action: "Proprioceptive training for numb feet." },
+        { phase: "Care", action: "Self-monitoring education and skin integrity." }
+      ],
+      recoveryWindow: "Ongoing Management"
+    }
   },
   {
     title: "Musculoskeletal Therapy",
-    description: "Deep tissue techniques, myofascial release, and therapeutic exercise for acute and chronic muscle conditions.",
+    description: "Deep tissue techniques and therapeutic exercise for acute and chronic muscle conditions.",
     icon: "Move",
+    clinicalData: {
+      focus: "Soft Tissue Release & Length-Tension Balance",
+      objectives: ["Myofascial trigger point release", "Restored muscle length", "Injury prophylaxis"],
+      protocol: [
+        { phase: "Release", action: "Ischemic compression and myofascial release." },
+        { phase: "Stretch", action: "Static and PNF stretching techniques." },
+        { phase: "Balance", action: "Correction of agonist-antagonist imbalances." },
+        { phase: "Load", action: "Eccentric loading for tendon health." }
+      ],
+      recoveryWindow: "2–6 Weeks"
+    }
   },
   {
     title: "Geriatric Physiotherapy",
-    description: "Fall prevention, arthritis management, and mobility restoration programs designed specifically for older adults.",
+    description: "Fall prevention and mobility restoration programs designed for older adults in Gudiyatham.",
     icon: "Accessibility",
+    clinicalData: {
+      focus: "Functional Autonomy & Safety",
+      objectives: ["Reduced fall risk", "Bone density preservation", "Pain management"],
+      protocol: [
+        { phase: "Safety", action: "Environment audit and gait assessment." },
+        { phase: "Balance", action: "Otago-based balance and strength training." },
+        { phase: "Activity", action: "Walking endurance and sit-to-stand power." },
+        { phase: "Social", action: "Community reintegration and confidence." }
+      ],
+      recoveryWindow: "Long-term Maintenance"
+    }
   },
   {
     title: "Pediatric Physiotherapy",
-    description: "Developmental delay, cerebral palsy, and postural correction — gentle, play-based rehabilitation for children.",
+    description: "Developmental delay and postural correction — gentle, play-based rehabilitation for children.",
     icon: "Baby",
+    clinicalData: {
+      focus: "Neurodevelopmental Milestones",
+      objectives: ["Motor milestone achievement", "Postural symmetry", "Play-based engagement"],
+      protocol: [
+        { phase: "Sensory", action: "Integration of primitive reflexes." },
+        { phase: "Motor", action: "Facilitation of rolling, crawling, and standing." },
+        { phase: "Tone", action: "Management of spasticity or hypotonia." },
+        { phase: "Home", action: "Caregiver education and home play protocols." }
+      ],
+      recoveryWindow: "Developmental Dependent"
+    }
   },
   {
     title: "Shoulder, Knee & Hip Joint Pain",
-    description: "Biomechanical assessment and precision treatment for the three joints most destroyed by modern sedentary life.",
+    description: "Biomechanical assessment and precision treatment for major joint dysfunction.",
     icon: "Target",
+    clinicalData: {
+      focus: "Joint Arthrokinematics & Functional Stability",
+      objectives: ["Pain-free stair climbing", "Improved overhead reach", "Restored squat depth"],
+      protocol: [
+        { phase: "Scanning", action: "Assessment of kinetic chain dysfunction." },
+        { phase: "Manual", action: "Mulligan or Maitland joint mobilizations." },
+        { phase: "Isolation", action: "Specific rotator cuff or gluteal strengthening." },
+        { phase: "Integration", action: "Multi-joint compound movement patterns." }
+      ],
+      recoveryWindow: "4–10 Weeks"
+    }
   },
   {
     title: "Home Visit Physiotherapy",
-    description: "Clinic-quality treatment delivered to your home for patients who cannot travel.",
+    description: "Clinic-quality treatment delivered to your home by Ishwaryam Physiotherapy specialists.",
     icon: "Home",
+    clinicalData: {
+      focus: "In-situ Functional Recovery",
+      objectives: ["Clinic-standard care at home", "Home environment optimization", "Caregiver support"],
+      protocol: [
+        { phase: "Setup", action: "Portable equipment deployment and safety audit." },
+        { phase: "Care", action: "Standard clinical protocols adapted for home." },
+        { phase: "Mobility", action: "Navigating home obstacles (stairs, washroom)." },
+        { phase: "Review", action: "Progress tracking and clinical handover." }
+      ],
+      recoveryWindow: "Situation Dependent"
+    }
   },
 ];
 

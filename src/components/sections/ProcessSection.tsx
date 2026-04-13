@@ -46,7 +46,11 @@ export default function ProcessSection() {
 
   return (
     <section ref={containerRef} className="section-padding bg-white relative overflow-hidden">
-      <div className="container-custom">
+      {/* Healing Psychology Layers */}
+      <div className="vitality-glow top-0 left-0 -translate-y-1/2 -translate-x-1/2 opacity-10" />
+      <div className="vitality-glow bottom-0 right-0 translate-y-1/2 translate-x-1/2 rose-glow opacity-20" />
+
+      <div className="container-custom relative z-10">
         <div className="max-w-4xl mb-32">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -56,7 +60,7 @@ export default function ProcessSection() {
           >
             <div className="h-px w-12 bg-accent" />
             <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase">
-              The Protocol
+              Ishwaryam Recovery Protocol
             </span>
           </motion.div>
           

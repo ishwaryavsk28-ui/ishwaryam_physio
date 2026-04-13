@@ -9,15 +9,19 @@ export default function TestimonialsSection() {
   const loopedReviews = [...TESTIMONIALS, ...TESTIMONIALS];
 
   return (
-    <section id="reviews" className="section-padding bg-white overflow-hidden">
-      <div className="container-custom mb-20 text-center">
+    <section id="reviews" className="section-padding bg-white relative overflow-hidden">
+      {/* Healing Psychology Layers */}
+      <div className="vitality-glow top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 rose-glow" />
+      <div className="vitality-glow bottom-0 right-0 translate-y-1/2 translate-x-1/2 opacity-10" />
+
+      <div className="container-custom mb-20 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-accent font-ui font-bold tracking-[0.3em] text-[10px] uppercase mb-4 block">
-            Patient Success Stories
+          <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
+            Healing Success Stories
           </span>
           <h2 className="text-5xl md:text-7xl font-display font-bold text-text-primary mb-6">
             Trusted by the Community.
