@@ -18,13 +18,14 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10 group"
               >
                 <img
                   src="/images/doctor_ish.png"
                   alt="Dr. Ishwarya — Lead Physiotherapist"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+                <div className="absolute inset-0 bg-[url('/images/hero_excellence_v3.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
               </motion.div>
 
               {/* Signature Block Under Portrait */}
@@ -44,26 +45,6 @@ export default function AboutSection() {
               </motion.div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.2 }}
-              className="relative md:absolute md:top-[-10px] md:right-[-40px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20 mb-8 md:mb-0"
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
-                  <Award className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-display font-bold text-primary">200+</h4>
-                  <p className="text-[9px] font-ui font-bold uppercase tracking-widest text-text-muted">Clinical Successes</p>
-                </div>
-              </div>
-              <p className="text-[9px] font-ui text-text-secondary leading-tight uppercase font-bold tracking-wider">
-                Consistent clinical excellence in Gudiyatham.
-              </p>
-            </motion.div>
 
             {/* Decor Element */}
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 blur-[80px] -z-10" />
@@ -77,9 +58,20 @@ export default function AboutSection() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">
-                Clinical Philosophy
-              </span>
+              <div className="flex flex-wrap items-center gap-6 mb-8">
+                <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase block">
+                  Clinical Philosophy
+                </span>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="bg-primary/5 border border-primary/10 px-4 py-2 rounded-full flex items-center gap-2"
+                >
+                  <Award className="w-3 h-3 text-primary" />
+                  <span className="text-[9px] font-ui font-extrabold text-primary uppercase tracking-widest">200+ Clinical Success Stories</span>
+                </motion.div>
+              </div>
               <div className="relative">
                 {/* Entry Path from Hero */}
                 <div className="hidden lg:block absolute -left-12 -top-16 w-px h-32 bg-gradient-to-b from-primary to-transparent" />
@@ -118,7 +110,7 @@ export default function AboutSection() {
                 href="#contact"
                 className="px-10 py-4 bg-primary text-white rounded-button font-ui font-bold text-xs uppercase tracking-[0.2em] hover:bg-accent transition-all shadow-lg hover:shadow-premium"
               >
-                Consult with Our Expert
+                Book Appointment
               </a>
             </div>
           </div>

@@ -82,13 +82,21 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <button
-          className={`lg:hidden p-2 rounded-xl transition-colors ${scrolled ? 'text-text-primary' : 'text-white'}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile menu and Persistent CTA */}
+        <div className="lg:hidden flex items-center gap-4">
+          <Link
+            href="#contact"
+            className={`px-5 py-2 rounded-full font-ui font-bold text-[10px] uppercase tracking-widest transition-all ${scrolled ? 'bg-primary text-white shadow-md' : 'bg-white text-primary'}`}
+          >
+            Book Now
+          </Link>
+          <button
+            className={`p-2 rounded-xl transition-colors ${scrolled ? 'text-text-primary' : 'text-white'}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

@@ -101,7 +101,7 @@ export default function HeroSection() {
                 target="_blank"
                 className="btn-premium bg-accent hover:bg-white hover:text-primary text-white text-sm uppercase tracking-[0.2em] group"
               >
-                Expert Consultation
+                Book Appointment
                 <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-2" />
               </Link>
               
@@ -136,7 +136,7 @@ export default function HeroSection() {
             className="relative hidden lg:block"
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden border border-white/10 shadow-premium aspect-[4/5] group">
-              <div className="absolute inset-0 bg-[url('/images/hero_excellence.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
+              <div className="absolute inset-0 bg-[url('/images/hero_excellence_v3.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent" />
               
               {/* Doctor Status Badge */}
@@ -145,12 +145,12 @@ export default function HeroSection() {
                   &quot;Your recovery is the only metric that matters.&quot;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-1bg-accent rounded-full" />
+                  <div className="w-10 h-1 bg-accent rounded-full" />
                   <p className="font-ui text-sm font-bold uppercase tracking-widest text-accent">
                     {CLINIC_DATA.doctor.name}
                   </p>
                 </div>
-              </div>
+ Broadway              </div>
             </div>
 
             {/* Decorative background depth */}

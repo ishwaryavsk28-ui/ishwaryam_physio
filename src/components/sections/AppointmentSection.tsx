@@ -138,7 +138,7 @@ export default function AppointmentSection() {
               className="glass-panel p-10 md:p-16 rounded-[48px] border-white/40 sticky top-32"
             >
               <div className="mb-12">
-                <h3 className="text-3xl font-display font-bold text-text-primary mb-3">Request Appointment</h3>
+                <h3 className="text-3xl font-display font-bold text-text-primary mb-3">Book Your Appointment</h3>
                 <p className="text-sm font-ui text-text-secondary">Fill the form below, and we will contact you within 2 hours.</p>
               </div>
 
