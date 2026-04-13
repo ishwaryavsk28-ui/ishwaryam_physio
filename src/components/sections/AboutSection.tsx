@@ -16,7 +16,7 @@ export default function AboutSection() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.2 }}
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-bg shadow-premium z-10"
               >
                 <img
@@ -31,8 +31,8 @@ export default function AboutSection() {
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.1 }}
                 className="text-center mt-8 relative z-10"
               >
                 <h4 className="text-2xl md:text-3xl font-display font-bold text-text-primary tracking-tight">
@@ -47,8 +47,8 @@ export default function AboutSection() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ delay: 0.2 }}
               className="relative md:absolute md:bottom-[-20px] md:left-[-60px] glass-panel p-6 rounded-[16px] shadow-2xl border-white/20 max-w-[220px] z-20 mb-8 md:mb-0"
             >
               <div className="flex items-center gap-3 mb-3">
@@ -74,7 +74,8 @@ export default function AboutSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
             >
               <span className="text-accent font-ui font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">
                 Clinical Philosophy
@@ -83,7 +84,7 @@ export default function AboutSection() {
                 {/* Entry Path from Hero */}
                 <div className="hidden lg:block absolute -left-12 -top-16 w-px h-32 bg-gradient-to-b from-primary to-transparent" />
                 
-                <h2 className="text-6xl md:text-8xl font-display font-bold text-text-primary leading-[1] tracking-tighter mb-12">
+                <h2 className="text-4xl md:text-8xl font-display font-bold text-text-primary leading-[1] tracking-tighter mb-12">
                   Transforming Pain <br />
                   into <span className="text-primary italic">Purpose</span>.
                 </h2>

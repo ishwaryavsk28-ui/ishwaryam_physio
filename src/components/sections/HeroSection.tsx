@@ -13,20 +13,20 @@ export default function HeroSection() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.5,
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
       },
     },
   };
 
   const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 50, filter: "blur(10px)" },
+    hidden: { opacity: 0, y: 20, filter: "blur(5px)" },
     visible: {
       opacity: 1,
       y: 0,
       filter: "blur(0px)",
       transition: { 
-        duration: 1, 
+        duration: 0.5, 
         ease: [0.19, 1, 0.22, 1] 
       },
     },
@@ -63,7 +63,7 @@ export default function HeroSection() {
 
             {/* Cinematic Headline */}
             <motion.div variants={itemVariants} className="mb-10">
-              <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.85] mb-2">
+              <h1 className="font-display text-5xl md:text-8xl lg:text-9xl font-bold leading-[0.9] mb-4">
                 Where Pain <br />
                 <span className="text-accent underline decoration-white/10 underline-offset-[12px]">Ends</span> and <br />
                 Life Begins.
@@ -132,7 +132,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.2, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden lg:block"
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden border border-white/10 shadow-premium aspect-[4/5] group">

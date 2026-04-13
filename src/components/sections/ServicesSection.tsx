@@ -43,11 +43,11 @@ export default function ServicesSection() {
             </span>
           </motion.div>
           
-          <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-display font-bold leading-[1] tracking-tighter mb-16 relative"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl md:text-8xl font-display font-bold leading-[1] tracking-tighter mb-16 relative"
           >
             {/* Entry Path from About */}
             <div className="hidden lg:block absolute -left-12 -top-24 w-px h-32 bg-gradient-to-b from-accent to-transparent" />
@@ -59,8 +59,8 @@ export default function ServicesSection() {
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
             className="text-xl text-text-secondary leading-relaxed max-w-2xl font-ui"
           >
             At Ishwaryam Physiotherapy Speciality Clinic, we operate at the intersection of medical science and therapeutic empathy. 
@@ -77,8 +77,8 @@ export default function ServicesSection() {
                 key={service.title}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1, duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05, duration: 0.4, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.1 }}
                 className="group flex flex-col h-[680px] rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:border-primary/30 hover:shadow-premium transition-all duration-500"
               >
                 {/* Image Container (Top 50%) */}
