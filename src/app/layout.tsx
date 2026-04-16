@@ -39,19 +39,72 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ishwaryam Physiotherapy Clinic Gudiyatham | Dr. S. Ishwarya | Pain Relief & Rehabilitation",
-  description: "Gudiyatham's highest-rated physiotherapy clinic. Dr. S. Ishwarya (B.P.T., M.I.A.P.) provides evidence-based treatment for back pain, spine disorders, sports injuries, neurological rehab & more. 5.0★ rated.",
-  keywords: "physiotherapy clinic Gudiyatham, physiotherapist Vellore district, back pain treatment Gudiyatham, Dr Ishwarya physiotherapy, rehabilitation center Gudiyatham, spine treatment Tamil Nadu, sports injury physio Gudiyatham",
+  metadataBase: new URL("https://ishwaryamphysiotherapyspecialityclinic.com"),
+  title: {
+    default: "Ishwaryam Physiotherapy Clinic | Dr. S. Ishwarya | Best Physiotherapist in Gudiyatham",
+    template: "%s | Ishwaryam Physiotherapy speciality clinic",
+  },
+  description: "Highest-rated Physiotherapy Clinic in Gudiyatham. Dr. S. Ishwarya (B.P.T., M.I.A.P.) offers 6+ years exp in Spine, Sports Injuries, Stroke Rehab & Pediatric care. 5.0★ Patient Satisfaction.",
+  keywords: [
+    "Physiotherapy clinic Gudiyatham",
+    "Best Physiotherapist in Gudiyatham",
+    "Back pain treatment Gudiyatham",
+    "Sports injury clinic Vellore",
+    "Neurological rehabilitation Gudiyatham",
+    "Stroke recovery center Vellore",
+    "Pediatric physiotherapy Gudiyatham",
+    "Home visit physiotherapy Gudiyatham",
+    "Dr Ishwarya Physiotherapist",
+    "Dharanampet Physiotherapy",
+    "Vellore District Physical Therapy"
+  ],
+  authors: [{ name: "Dr. S. Ishwarya" }],
+  creator: "Dr. S. Ishwarya",
+  publisher: "Ishwaryam Physiotherapy speciality clinic",
+  formatDetection: {
+    email: false,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Ishwaryam Physiotherapy Clinic Gudiyatham",
-    description: "Expert physiotherapy care in Gudiyatham by Dr. S. Ishwarya.",
-    url: "https://ishwaryamphysio.com",
-    siteName: CLINIC_DATA.name,
+    title: "Ishwaryam Physiotherapy speciality clinic | Dr. S. Ishwarya",
+    description: "Expert Physiotherapy & Pain Rehabilitation in Gudiyatham. Evidence-based care for Spine, Sports, and Neuro conditions.",
+    url: "https://ishwaryamphysiotherapyspecialityclinic.com",
+    siteName: "Ishwaryam Physiotherapy",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Ishwaryam Physiotherapy Clinic Logo",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
-  alternates: {
-    canonical: "https://ishwaryamphysio.com",
+  twitter: {
+    card: "summary_large_image",
+    title: "Ishwaryam Physiotherapy Clinic",
+    description: "Gudiyatham's Premier Physiotherapy & Rehabilitation Center.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/logo.png",
   },
 };
 
@@ -64,10 +117,19 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["MedicalClinic", "PhysiotherapyClinic", "LocalBusiness"],
     "name": CLINIC_DATA.name,
-    "image": "https://ishwaryamphysio.com/images/clinic-exterior.jpg", // Placeholder
-    "@id": "https://ishwaryamphysio.com",
-    "url": "https://ishwaryamphysio.com",
+    "image": "https://ishwaryamphysiotherapyspecialityclinic.com/logo.png",
+    "@id": "https://ishwaryamphysiotherapyspecialityclinic.com",
+    "url": "https://ishwaryamphysiotherapyspecialityclinic.com",
     "telephone": CLINIC_DATA.contact.primary,
+    "priceRange": "$$",
+    "medicalSpecialty": [
+      "Physiotherapy",
+      "Pain Rehabilitation",
+      "Neurological Rehabilitation",
+      "Sports Medicine",
+      "Geriatric Physiotherapy",
+      "Pediatric Physiotherapy"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": CLINIC_DATA.address.line1,
@@ -95,7 +157,9 @@ export default function RootLayout({
       "closes": "19:00"
     },
     "sameAs": [
-      // Add social links if available
+      CLINIC_DATA.contact.youtube,
+      CLINIC_DATA.contact.facebook,
+      CLINIC_DATA.contact.instagram
     ]
   };
 
