@@ -106,6 +106,12 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/logo.png",
   },
+  other: {
+    "geo.region": "IN-TN",
+    "geo.placename": "Gudiyatham",
+    "geo.position": "12.9460;78.8714",
+    "ICBM": "12.9460, 78.8714",
+  },
 };
 
 export default function RootLayout({
@@ -142,6 +148,33 @@ export default function RootLayout({
       "@type": "GeoCoordinates",
       "latitude": 12.9460,
       "longitude": 78.8714
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "15",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Physiotherapy Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Orthopedic Physiotherapy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neurological Rehabilitation"
+          }
+        }
+      ]
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
