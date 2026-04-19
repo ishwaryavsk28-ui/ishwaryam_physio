@@ -11,6 +11,7 @@ import { CLINIC_DATA } from "@/lib/clinic-data";
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
   phone: z.string().min(10, "Valid phone number is required"),
+  city: z.string().min(2, "City/Area is required"),
   complaint: z.string().min(1, "Please select a complaint"),
   date: z.string().min(1, "Preferred date is required"),
   message: z.string().optional(),
@@ -179,20 +180,32 @@ export default function AppointmentSection() {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted px-1">Primary Condition</label>
-                    <select
-                      {...register("complaint")}
-                      className="w-full bg-bg border border-border px-5 py-4 rounded-xl text-sm font-ui focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all appearance-none cursor-pointer"
-                    >
-                      <option value="">Select Speciality</option>
-                      <option value="Spine">Spine & Back Pain</option>
-                      <option value="Neuro">Neurological Rehab</option>
-                      <option value="Sports">Sports Injury</option>
-                      <option value="Orthopedic">Orthopedic Physio</option>
-                      <option value="Other">Other Assessment</option>
-                    </select>
-                    {errors.complaint && <p className="text-[10px] text-red-500 font-bold px-1 uppercase">{errors.complaint.message}</p>}
+                  <div className="grid sm:grid-cols-2 gap-8">
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted px-1">City / Area Name</label>
+                      <input
+                        {...register("city")}
+                        className="w-full bg-bg border border-border px-5 py-4 rounded-xl text-sm font-ui focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all placeholder:text-text-muted/50"
+                        placeholder="Gudiyatham"
+                      />
+                      {errors.city && <p className="text-[10px] text-red-500 font-bold px-1 uppercase">{errors.city.message}</p>}
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-ui font-bold uppercase tracking-widest text-text-muted px-1">Primary Condition</label>
+                      <select
+                        {...register("complaint")}
+                        className="w-full bg-bg border border-border px-5 py-4 rounded-xl text-sm font-ui focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all appearance-none cursor-pointer"
+                      >
+                        <option value="">Select Speciality</option>
+                        <option value="Spine">Spine & Back Pain</option>
+                        <option value="Neuro">Neurological Rehab</option>
+                        <option value="Sports">Sports Injury</option>
+                        <option value="Orthopedic">Orthopedic Physio</option>
+                        <option value="Facial">Facial Palsy Care</option>
+                        <option value="Other">Other Assessment</option>
+                      </select>
+                      {errors.complaint && <p className="text-[10px] text-red-500 font-bold px-1 uppercase">{errors.complaint.message}</p>}
+                    </div>
                   </div>
 
                   <div className="space-y-2">

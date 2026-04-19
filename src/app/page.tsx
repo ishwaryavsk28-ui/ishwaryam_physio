@@ -10,6 +10,8 @@ import AppointmentSection from "@/components/sections/AppointmentSection";
 import FooterSection from "@/components/sections/FooterSection";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
+import EnvironmentSection from "@/components/sections/EnvironmentSection";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -17,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <TrustStrip />
       <AboutSection />
+      <EnvironmentSection />
       <ServicesSection />
       <WhyUsSection />
       <ProcessSection />

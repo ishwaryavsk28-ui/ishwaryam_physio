@@ -81,7 +81,7 @@ export default function AboutSection() {
                     {CLINIC_DATA.doctor.name}
                   </h4>
                   <p className="text-[10px] md:text-xs font-ui font-bold text-primary uppercase tracking-[0.2em] mt-2 border-t border-primary/10 pt-2 inline-block">
-                    B.P.T., M.I.A.P., Hindi B.A.
+                    Bachelor of Physiotherapy (B.P.T.)
                   </p>
                 </motion.div>
               </div>
@@ -97,25 +97,61 @@ export default function AboutSection() {
               {CLINIC_DATA.doctor.bio}
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-8 mb-12">
-              {[
-                { icon: ShieldCheck, text: "B.P.T. Certified Professional" },
-                { icon: Users, text: "Active M.I.A.P. Member" },
-                { icon: CheckCircle2, text: "5.0+ Patient Success Rate" },
-                { icon: Award, text: "Clinical Rehab Specialist" },
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-bg border border-border flex items-center justify-center text-primary">
-                    <item.icon className="w-5 h-5" />
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12 mb-12">
+              <div className="space-y-6">
+                {[
+                  { icon: ShieldCheck, text: "B.P.T. Certified Professional" },
+                  { icon: Users, text: "Trained Supportive Staff" },
+                  { icon: CheckCircle2, text: "5.0+ Patient Success Rate" },
+                  { icon: Award, text: "Kind Clinical Assistance" },
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-bg border border-border flex items-center justify-center text-primary">
+                      <item.icon className="w-5 h-5" />
+                    </div>
+                    <span className="text-[11px] font-ui font-bold uppercase tracking-wider text-text-primary">
+                      {item.text}
+                    </span>
                   </div>
-                  <span className="text-[11px] font-ui font-bold uppercase tracking-wider text-text-primary">
-                    {item.text}
-                  </span>
+                ))}
+              </div>
+
+              {/* Clinical Presence Secondary Visual */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative rounded-3xl overflow-hidden border border-border shadow-lg aspect-[4/3] group"
+              >
+                <img 
+                  src="/images/real/clinic_facade.png" 
+                  alt="Ishwaryam Clinic Exterior" 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/80 to-transparent p-4">
+                  <span className="text-[9px] font-ui font-bold text-white uppercase tracking-[0.2em]">Physical Clinic Presence</span>
                 </div>
-              ))}
+              </motion.div>
             </div>
 
-            <div className="flex items-center pt-8 border-t border-border">
+            {/* Educational Focus Visual */}
+            <div className="grid sm:grid-cols-[1.2fr_1fr] gap-8 items-center pt-8 border-t border-border">
+              <div className="space-y-2">
+                <h5 className="text-sm font-display font-bold text-text-primary uppercase tracking-widest">Clinical Education</h5>
+                <p className="text-xs text-text-secondary leading-relaxed font-ui">
+                  We believe in patient awareness. Every session includes educational insights to help you understand your recovery path.
+                </p>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-premium h-32 border border-border">
+                <img 
+                  src="/images/real/clinic_education.jpg" 
+                  alt="Anatomical Education" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center pt-12">
               <a 
                 href="#contact"
                 className="px-10 py-4 bg-primary text-white rounded-button font-ui font-bold text-xs uppercase tracking-[0.2em] hover:bg-accent transition-all shadow-lg hover:shadow-premium"

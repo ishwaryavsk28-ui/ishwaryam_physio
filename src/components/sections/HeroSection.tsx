@@ -136,7 +136,7 @@ export default function HeroSection() {
             className="relative hidden lg:block"
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden border border-white/10 shadow-premium aspect-[4/5] group">
-              <div className="absolute inset-0 bg-[url('/images/hero_excellence_v3.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
+              <div className="absolute inset-0 bg-[url('/images/hero_cinematic.png')] bg-cover bg-center transition-transform duration-[20s] group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent" />
               
               {/* Doctor Status Badge */}
@@ -150,7 +150,7 @@ export default function HeroSection() {
                     {CLINIC_DATA.doctor.name}
                   </p>
                 </div>
- Broadway              </div>
+              </div>
             </div>
 
             {/* Decorative background depth */}

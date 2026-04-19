@@ -11,13 +11,15 @@ const SERVICE_IMAGES: Record<string, string> = {
   "Neurological Rehabilitation": "/images/neuro_physio.png",
   "Post-Surgical Recovery": "/images/post_surgical_physio.png",
   "Sports Injury Treatment": "/images/sports_physio.png",
-  "Neck Pain & Cervical Spondylosis": "/images/neck_physio.png",
+  "Neck Pain & Cervical Spondylosis": "/images/real/clinic_traction.png",
   "Diabetic Neuropathy Management": "/images/diabetic_physio.png",
   "Musculoskeletal Therapy": "/images/musculoskeletal_physio.png",
   "Geriatric Physiotherapy": "/images/geriatric_physio.png",
   "Pediatric Physiotherapy": "/images/pediatric_physio.png",
   "Shoulder, Knee & Hip Joint Pain": "/images/joint_physio.png",
   "Home Visit Physiotherapy": "/images/home_physio.png",
+  "Facial Palsy Recovery": "/images/neuro_physio.png", // Use neuro as base or another generated one
+  "Electrotherapy Modalities": "/images/electrotherapy_modal.png",
 };
 
 export default function ServicesSection() {

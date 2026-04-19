@@ -2,24 +2,24 @@ export const CLINIC_DATA = {
   name: "Ishwaryam Physiotherapy speciality clinic",
   shortName: "Ishwaryam",
   doctor: {
-    name: "Dr. S. Ishwarya",
-    qualifications: "B.P.T., M.I.A.P., Hindi B.A.",
-    credentialFull: "Bachelor of Physiotherapy | Member, Indian Association of Physiotherapists",
+    name: "Dr. S. Ishwarya PT",
+    qualifications: "B.P.T.",
+    credentialFull: "Bachelor of Physiotherapy | Professional Practitioner",
     tagline: "Your Wellness. Our Purpose.",
     taglineTamil: "உங்கள் நலம்... எங்கள் நோக்கம்",
-    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy speciality clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With 6+ years of clinical excellence, her Bachelor of Physiotherapy degree, and active membership in the Indian Association of Physiotherapists (M.I.A.P.), Dr. Ishwarya brings surgical precision to every assessment and genuine human care to every session. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
+    bio: `Dr. S. Ishwarya founded Ishwaryam Physiotherapy speciality clinic with a single conviction — that the people of Gudiyatham deserve world-class rehabilitation without traveling to Chennai or Vellore city. With 6+ years of clinical excellence and her Bachelor of Physiotherapy degree, Dr. Ishwarya brings surgical precision to every assessment. She is also proficient in Hindi (B.A.), enabling seamless communication for a diverse patient base. At Ishwaryam, we don't just treat symptoms; we architect your recovery.`,
     experience: "6+ Years",
   },
   address: {
     line1: "No. 52, Neeli Govindappa Chetty Street (Neeligovindhappan St)",
-    line2: "Dharanampet, Near National Higher School, MBS Nagar",
+    line2: "Dharanampet, Near HDFC Bank & National Higher Secondary School",
     line3: "Gudiyatham, Vellore District, Tamil Nadu — 632602",
-    full: "No. 52, Neeli Govindappa Chetty Street, Dharanampet, Gudiyatham — 632602",
+    full: "No. 52, Neeli Govindappa Chetty Street, Dharanampet, Near HDFC Bank, Gudiyatham — 632602",
     googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.344485361044!2d78.8714!3d12.946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzQ1LjYiTiA3OMKwNTInMTcuMCJF!5e0!3m2!1sen!2sin!4v1712910000000!5m2!1sen!2sin", // Placeholder
   },
   contact: {
-    primary: "093614 26487",
-    alt: "9843954861",
+    primary: "9843954861",
+    alt: "093614 26487",
     whatsapp: "919361426487",
     whatsappLink: "https://wa.me/919361426487",
     email: "ishwaryamphysio@gmail.com",
@@ -27,7 +27,7 @@ export const CLINIC_DATA = {
     facebook: "#",
     instagram: "#",
   },
-  hours: "Monday – Saturday: 9:00 AM – 7:00 PM | Sunday: Closed",
+  hours: "Mon – Sat: 10:00 AM – 1:30 PM | 5:00 PM – 8:30 PM | Sunday: 10:00 AM – 1:30 PM",
   rating: {
     score: "5.0 / 5.0",
     reviews: "15+ Verified Reviews",
@@ -243,6 +243,39 @@ export const SERVICES: Service[] = [
         { phase: "Review", action: "Progress tracking and clinical handover." }
       ],
       recoveryWindow: "Situation Dependent"
+    }
+  },
+  {
+    title: "Facial Palsy Recovery",
+    description: "Specialized neuromuscular retraining for facial nerve dysfunction (Bell's Palsy), focusing on symmetry and muscle activation.",
+    icon: "Target",
+    clinicalData: {
+      focus: "Cranial Nerve VII Activation & Symmetry",
+      objectives: ["Restore facial symmetry", "Prevent synkinesis", "Re-establish eye closure & smile function"],
+      protocol: [
+        { phase: "Evaluation", action: "House-Brackmann scale assessment and muscle testing." },
+        { phase: "Activation", action: "Specific facial expressive exercises & mirror feedback." },
+        { phase: "Stimulation", action: "Gentle PNF for facial muscles and sensorimotor input." },
+        { phase: "Functional", action: "Integration into speech and expressive movement." }
+      ],
+      recoveryWindow: "4–16 Weeks"
+    }
+  },
+  {
+    title: "Electrotherapy Modalities",
+    description: "Advanced clinical technology to accelerate tissue healing, reduce inflammation, and manage chronic pain.",
+    icon: "Zap",
+    clinicalData: {
+      focus: "Physiological Tissue Repair & Pain Gate Control",
+      objectives: ["Accelerated healing at cellular level", "Non-invasive pain management", "Inhibition of abnormal muscle tone"],
+      protocol: [
+        { phase: "Interferential (IFT)", action: "Deep tissue pain relief and swelling reduction." },
+        { phase: "Ultrasound Therapy", action: "High-frequency sound waves for musculoskeletal healing." },
+        { phase: "Muscle Stimulation", action: "Restoring muscle firing patterns and preventing atrophy." },
+        { phase: "Laser & TENS", action: "Rapid pain suppression and nerve desensitization." },
+        { phase: "Traction (L/C)", action: "Precision mechanical decompression for spine relief." }
+      ],
+      recoveryWindow: "1–4 Weeks (Acute Management)"
     }
   },
 ];

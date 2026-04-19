@@ -153,8 +153,8 @@ export default function FooterSection() {
               <div className="flex items-center gap-4">
                 <Clock className="w-5 h-5 text-accent shrink-0" />
                 <div className="text-[10px] font-ui font-bold text-white/70 uppercase tracking-widest leading-loose">
-                  Mon – Sat: 09:00 – 19:00 <br />
-                  <span className="text-red-400">Sunday Recovery Closed</span>
+                  Mon – Sat: 10:00 – 1:30 | 5:00 – 8:30 <br />
+                  <span className="text-accent">Sunday: 10:00 AM – 1:30 PM</span>
                 </div>
               </div>
             </div>
